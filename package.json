@@ -1,0 +1,33 @@
+{
+  "name": "mediqueue",
+  "version": "1.0.0",
+  "description": "MediQueue — doctor appointments, live queue and AI clinic assistant",
+  "main": "index.js",
+  "private": true,
+  "workspaces": [
+    "frontend",
+    "backend"
+  ],
+  "scripts": {
+    "test": "npm run test --workspace=backend",
+    "lint": "npm run lint --workspace=frontend",
+    "build": "npm run build --workspace=frontend",
+    "db:check": "npm run db:check --workspace=backend",
+    "db:setup": "npm run db:setup --workspace=backend",
+    "dev:frontend": "npm run dev --workspace=frontend",
+    "dev:backend": "npm run dev --workspace=backend",
+    "dev": "concurrently -n backend,frontend -c blue,green \"npm:dev:backend\" \"npm:dev:frontend\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "allowScripts": {
+    "esbuild": true,
+    "workerd": true,
+    "unrs-resolver@1.12.2": true
+  },
+  "devDependencies": {
+    "concurrently": "^9.2.1"
+  }
+}

@@ -1,0 +1,31 @@
+@import "tailwindcss";
+
+.glass {
+  background: rgba(255, 255, 255, 0.15); 
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px); 
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+}
+
+.loginIconBg {
+  @apply flex justify-center items-center bg-[rgb(214,210,210)] w-15 h-12 rounded-2xl;
+}
+
+.button {
+    @apply border-2 border-gray-400 text-black w-[35%] h-[95%] rounded-2xl flex justify-center items-center gap-2 cursor-pointer;
+}
+
+.button-active {
+  background-color: #3b82f6; /* selected color */
+  color: white;
+}
+
+.button-active .button-icon {
+  filter: invert(1);
+}
+
+.loginForm {
+  @apply flex flex-col justify-center w-full h-full gap-5 rounded-md;
+}
