@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # MediQueue — Doctor Appointments & Smart Queue Management
 
 MediQueue is a full-stack clinic appointment and live-queue system. Patients book
@@ -437,3 +438,6 @@ npm run build
 
 - [API reference](docs/API.md)
 - [Database schema, encryption and RBAC](docs/DATABASE-SCHEMA.md)
+=======
+# MediQueue_HealthCare_AI_Assistant
+>>>>>>> e51427d25afa654e6eac118aaf72fb4ba510ea93
